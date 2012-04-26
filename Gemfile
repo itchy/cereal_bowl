@@ -7,6 +7,7 @@ gem 'rails', '3.2.3'
 
 gem 'pg'
 gem "active_model_serializers"
+gem "inherits_from"
 
 
 # Gems used only for assets and not required

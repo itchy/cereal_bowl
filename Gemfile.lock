@@ -45,6 +45,8 @@ GEM
       multi_json (~> 1.0)
     hike (1.2.1)
     i18n (0.6.0)
+    inherits_from (0.0.2)
+      activerecord
     journey (1.0.3)
     jquery-rails (2.0.2)
       railties (>= 3.2.0, < 5.0)
@@ -121,6 +123,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers
   coffee-rails (~> 3.2.1)
+  inherits_from
   jquery-rails
   pg
   rails (= 3.2.3)
