@@ -1,0 +1,16 @@
+common: &common
+  adapter: postgresql
+  username: scott
+  password:  # from psql setup, see Postgresql
+
+development:
+  <<: *common
+  database: cereal_bowl_development
+
+test:
+  <<: *common
+  database: cereal_bowl_test
+
+production:
+  <<: *common
+  database: cereal_bowl_production
