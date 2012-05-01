@@ -1,9 +1,21 @@
 CerealBowl::Application.routes.draw do
-  resources :comments
+  resources :comments do
+    collection do
+      get :schema
+    end
+  end
 
-  resources :posts
+  resources :posts do
+    collection do
+      get :schema
+    end
+  end    
 
-  resources :blogs
+  resources :blogs do
+    collection do
+      get :schema
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

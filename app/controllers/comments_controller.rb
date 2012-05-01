@@ -80,4 +80,8 @@ class CommentsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def schema
+    render json: CommentSerializer.schema
+  end
 end
